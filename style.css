@@ -1,0 +1,98 @@
+body {
+  background: linear-gradient(
+    to top,
+    #dbdcd7 0%,
+    #dddcd7 24%,
+    #e2c9cc 30%,
+    #e7627d 46%,
+    #b8235a 59%,
+    #801357 71%,
+    #3d1635 84%,
+    #1c1a27 100%
+  );
+}
+
+h1 {
+  animation: neon 0.08s ease-in-out infinite alternate;
+  font-family: "Courgette", cursive;
+  font-size: 100px;
+  font-weight: bold;
+  -webkit-text-stroke: 1px pink;
+  color: rgb(2, 26, 245);
+}
+
+strong {
+  font-size: 23px;
+  animation: neon 0.08s ease-in-out infinite alternate;
+}
+
+.right {
+  text-align: right;
+  margin: 40px 200px 0 20px;
+}
+
+.mb-3 {
+  margin: 50px;
+}
+
+.mainImg {
+  width: 10cm;
+  height: 10cm;
+  display: inline-block;
+  margin: -180px 0 10px 50px;
+}
+
+.days {
+  margin: 10px 200px 0 20px;
+  font-family: "Courgette", cursive;
+  font-size: 30px;
+  color: yellow;
+  -webkit-text-stroke: 1px pink;
+  animation: neon 0.08s ease-in-out infinite alternate;
+}
+
+.temperature {
+  margin: -200px 200px 0 20px;
+  font-size: 50px;
+  font-family: "Courgette", cursive;
+  color: greenyellow;
+  -webkit-text-stroke: 1px darkgreen;
+  animation: neon 0.08s ease-in-out infinite alternate;
+}
+
+.details {
+  margin: 10px 200px 0 20px;
+  font-family: "Courgette", cursive;
+  font-size: 17px;
+  color: green;
+  animation: neon 0.08s ease-in-out infinite alternate;
+}
+
+.row {
+  text-align: center;
+  margin: 0 -290px 0 -50px;
+  font-family: "Courgette", cursive;
+  font-size: 13px;
+  -webkit-text-stroke: 1px orange;
+  color: olive;
+}
+
+.forecastImg {
+  width: 4cm;
+  height: 4cm;
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 6px rgba(102, 247, 247, 0.92),
+      0 0 33px rgba(79, 241, 241, 0.555), 0 0 11px rgba(63, 228, 219, 0.52),
+      0 0 22px rgba(163, 162, 248, 0.92), 0 0 33px rgba(72, 238, 230, 0.78),
+      0 0 55px rgba(28, 226, 216, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(183, 236, 245, 0.98),
+      0 0 33px rgba(181, 234, 247, 0.42), 0 0 11px rgba(175, 228, 238, 0.58),
+      0 0 22px rgba(187, 243, 234, 0.84), 0 0 33px rgba(166, 232, 248, 0.88),
+      0 0 66px rgb(173, 238, 243);
+  }
+}
