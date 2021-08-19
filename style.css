@@ -26,6 +26,11 @@ strong {
   animation: neon 0.08s ease-in-out infinite alternate;
 }
 
+a {
+  font-family: "Courgette", cursive;
+  font-size: 19px;
+}
+
 .right {
   text-align: right;
   margin: 40px 200px 0 20px;
