@@ -33,7 +33,7 @@ a {
 
 #description {
   text-align: right;
-  margin: 10px 200px 20px 20px;
+  margin: 0px 100px 20px 20px;
   font-family: "Courgette", cursive;
   font-size: 22px;
   color: palegreen;
@@ -43,7 +43,7 @@ a {
 
 .right {
   text-align: right;
-  margin: 30px 200px 0 20px;
+  margin: 30px 100px 0 20px;
 }
 
 .mb-3 {
@@ -58,16 +58,16 @@ a {
 }
 
 .days {
-  margin: 10px 200px 10px 20px;
+  margin: 20px 100px 10px 20px;
   font-family: "Courgette", cursive;
-  font-size: 30px;
+  font-size: 25px;
   color: yellow;
   -webkit-text-stroke: 1px pink;
   animation: neon 0.08s ease-in-out infinite alternate;
 }
 
 .temperature {
-  margin: -200px 200px 0 20px;
+  margin: -200px 100px 0 20px;
   font-size: 50px;
   font-family: "Courgette", cursive;
   color: greenyellow;
@@ -76,7 +76,7 @@ a {
 }
 
 .details {
-  margin: 10px 200px 0 20px;
+  margin: 0px 100px 0 20px;
   font-family: "Courgette", cursive;
   font-size: 17px;
   color: green;

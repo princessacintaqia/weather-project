@@ -17,13 +17,20 @@ let days = [
 
 let day = days[now.getDay()];
 
-mainDate.innerHTML = `${day}, ${hour}:${minute}`;
+mainDate.innerHTML = `Last updated ${day}, ${hour}:${minute}`;
 
 function completeWeather(response) {
   let h1 = document.querySelector("h1");
-  h1.innerHTML = response.data.name;
   let mainTemperature = document.querySelector("#inversion");
+  let descriptionElement = document.querySelector("#description");
+  let windElement = document.querySelector("#wind");
+  let precipitation = document.querySelector("#humidity");
+
+  h1.innerHTML = response.data.name;
   mainTemperature.innerHTML = Math.round(response.data.main.temp) + "° C";
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  windElement.innerHTML = "wind: " + Math.round(response.data.wind.speed) + "%";
+  precipitation.innerHTML = "humidity: " + response.data.main.humidity + "%";
 }
 
 function searchCity(city) {
