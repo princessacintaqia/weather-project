@@ -31,9 +31,19 @@ a {
   font-size: 19px;
 }
 
+#description {
+  text-align: right;
+  margin: 10px 200px 20px 20px;
+  font-family: "Courgette", cursive;
+  font-size: 22px;
+  color: palegreen;
+  -webkit-text-stroke: 1px greenyellow;
+  animation: neon 0.08s ease-in-out infinite alternate;
+}
+
 .right {
   text-align: right;
-  margin: 40px 200px 0 20px;
+  margin: 30px 200px 0 20px;
 }
 
 .mb-3 {
@@ -44,11 +54,11 @@ a {
   width: 10cm;
   height: 10cm;
   display: inline-block;
-  margin: -180px 0 10px 50px;
+  margin: -200px 0 10px 10px;
 }
 
 .days {
-  margin: 10px 200px 0 20px;
+  margin: 10px 200px 10px 20px;
   font-family: "Courgette", cursive;
   font-size: 30px;
   color: yellow;
