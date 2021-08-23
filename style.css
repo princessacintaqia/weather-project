@@ -23,7 +23,7 @@ a {
 
 #description {
   text-align: right;
-  margin: 0px 100px 20px 20px;
+  margin: -30px 100px 20px 20px;
   font-family: "Courgette", cursive;
   font-size: 22px;
   color: white;
@@ -41,8 +41,8 @@ a {
 }
 
 .mainImg {
-  width: 10cm;
-  height: 10cm;
+  width: 9cm;
+  height: 9cm;
   display: inline-block;
   margin: -200px 100px 10px 10px;
 }
@@ -57,7 +57,8 @@ a {
 }
 
 .temperature {
-  margin: -200px 100px 0 20px;
+  text-align: right;
+  margin: -200px 100px -20px 270px;
   font-size: 50px;
   font-family: "Courgette", cursive;
   color: cyan;
