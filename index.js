@@ -27,8 +27,10 @@ function completeWeather(response) {
   let precipitation = document.querySelector("#humidity");
   let iconElement = document.querySelector("#icon");
 
+  celsiusTemperature = response.data.main.temp;
+
   h1.innerHTML = response.data.name;
-  mainTemperature.innerHTML = Math.round(response.data.main.temp) + "° C";
+  mainTemperature.innerHTML = Math.round(response.data.main.temp);
   descriptionElement.innerHTML = response.data.weather[0].description;
   windElement.innerHTML = "wind: " + Math.round(response.data.wind.speed) + "%";
   precipitation.innerHTML = "humidity: " + response.data.main.humidity + "%";
@@ -50,5 +52,30 @@ function pressSubmit(event) {
   searchCity(city);
 }
 
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#inversion");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+}
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#inversion");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+}
+
 let searchForm = document.querySelector("#search-city");
 searchForm.addEventListener("submit", pressSubmit);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+searchCity("Jakarta");

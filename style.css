@@ -23,7 +23,7 @@ a {
 
 #description {
   text-align: right;
-  margin: -30px 100px 20px 20px;
+  margin: -50px 100px 20px 20px;
   font-family: "Courgette", cursive;
   font-size: 22px;
   color: white;
@@ -41,14 +41,14 @@ a {
 }
 
 .mainImg {
-  width: 9cm;
-  height: 9cm;
+  width: 10cm;
+  height: 10cm;
   display: inline-block;
   margin: -200px 100px 10px 10px;
 }
 
 .days {
-  margin: 20px 100px 10px 20px;
+  margin: 20px 100px -20px 20px;
   font-family: "Courgette", cursive;
   font-size: 25px;
   color: white;
@@ -58,11 +58,35 @@ a {
 
 .temperature {
   text-align: right;
-  margin: -200px 100px -20px 270px;
+  margin: -230px 0px -30px 300px;
   font-size: 50px;
   font-family: "Courgette", cursive;
   color: cyan;
   -webkit-text-stroke: 1px purple;
+  animation: neon 0.08s ease-in-out infinite alternate;
+}
+
+.units a {
+  text-decoration: none;
+  color: cyan;
+  -webkit-text-stroke: 1px purple;
+  font-size: 22px;
+  animation: neon 0.08s ease-in-out infinite alternate;
+}
+
+.units .active {
+  color: black;
+  -webkit-text-stroke: 1px purple;
+  cursor: default;
+  font-size: 22px;
+  animation: neon 0.08s ease-in-out infinite alternate;
+}
+
+.units .active:hover {
+  text-decoration: none;
+  color: cyan;
+  -webkit-text-stroke: 1px purple;
+  font-size: 22px;
   animation: neon 0.08s ease-in-out infinite alternate;
 }
 
