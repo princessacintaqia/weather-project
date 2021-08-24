@@ -45,6 +45,11 @@ a {
   height: 10cm;
   display: inline-block;
   margin: -200px 100px 10px 10px;
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;
+  filter: contrast(200%);
+  filter: brightness(2);
+  filter: drop-shadow(20x 20px 10px rgb(230, 101, 247)) invert(90%);
 }
 
 .days {
